@@ -1,0 +1,68 @@
+header {
+  padding-top: 200px;
+  margin-bottom: 10px; }
+
+h2 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: var(--black-color);
+  font-size: 64px;
+  font-weight: 400; }
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 30px;
+      font-size: 200; } }
+
+.world {
+  text-decoration: line-through; }
+
+.dot {
+  color: var(--black-color); }
+  @media (min-width: 768px) {
+    .dot {
+      color: var(--blue-color); } }
+
+.title-head {
+  grid-column: 1/-1; }
+  @media (min-width: 768px) {
+    .title-head {
+      grid-column: 2/9; } }
+
+.text-head {
+  grid-column: 1/-1;
+  margin-top: 16px; }
+  @media (min-width: 768px) {
+    .text-head {
+      grid-column: 2/8; } }
+
+#mobile {
+  display: block; }
+  @media (min-width: 768px) {
+    #mobile {
+      display: none; } }
+
+#desk {
+  display: none; }
+  @media (min-width: 768px) {
+    #desk {
+      display: block; } }
+
+.cta1 {
+  width: 288px;
+  height: 48px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (min-width: 768px) {
+    .cta1 {
+      width: 226px;
+      height: 56px;
+      margin: 0; } }
+
+.btn1 {
+  padding-top: 56px;
+  grid-column: 1/13; }
+  @media (min-width: 768px) {
+    .btn1 {
+      grid-column: 2/3; } }
+
+/*# sourceMappingURL=header.css.map */

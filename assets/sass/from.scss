@@ -1,0 +1,51 @@
+.from{
+    width: 100vw;
+    margin-top: -100px;
+}
+
+.from-img{
+    grid-column: 1/-1;
+    position: relative;
+    display: block;
+    margin-left: -6%;
+    margin-right: auto;
+    justify-content: center;
+
+    img{
+        width: 32vw;
+    min-width: 360px;
+    max-width: 458px;
+    }
+
+    @media (min-width:360px) {
+        margin-left: auto;
+                  
+    }
+    @media (min-width:768px) {
+        grid-column: 2/4;
+        padding-right: 100px;
+        margin-left: -20px;
+                  
+    }
+    
+   
+}
+
+.from-text{
+    grid-column: 1/-1;
+    margin: 5%;
+    
+    position: relative;
+
+    @media (min-width:768px) {
+        grid-column: 5/12;
+        width: 55%;
+        margin-left: 200px;  
+        text-align: left;          
+    }
+    
+    
+}
+.title-from{
+    margin-bottom: 20px;
+}

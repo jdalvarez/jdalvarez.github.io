@@ -1,0 +1,23 @@
+
+.title-inv{
+    grid-column: 2/13;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.gallery{
+    grid-column: 1/13;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 1440px;
+}
+
+.inv-img{
+    width: 100vw;
+    max-width: 480px;
+
+}

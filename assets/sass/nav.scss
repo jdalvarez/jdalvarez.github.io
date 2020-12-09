@@ -1,0 +1,113 @@
+.nav{
+    top: 0;
+    left: 0;
+    height: 44px;
+    width: 100%;
+    max-width: 1440px;
+    padding-right: 5%;
+    padding-left: 5%;
+    position: fixed;
+    z-index: 100;
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    display: table;
+}
+
+
+.logo{
+    float: left;
+    margin: 10px;
+}
+#menu-check{
+    display: none;             
+}
+
+.btn-open{
+    float: right;
+    font-size: 18px;
+    margin: 12px 19px 12px 19px;
+    cursor: pointer;
+
+    @media (min-width:768px) {
+        display: none;                 /* oculto el label (icono de menu) a partir de los 1024px*/ 
+    }
+}
+
+.btn-close{
+    float: right;
+    font-size: 18px;
+    margin: 12px 19px 12px 19px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    padding: 4px;
+    width: 100%;
+    height: 224px;
+    background-color: var(--blue-color);
+    transition: all .2s;
+    right: -100%;
+
+    @media (min-width:768px){
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);              
+        float: right;   
+        display: flex;
+        background-color: var(--white-color);
+    }
+}
+
+.menu a{
+    display: block;
+    font-size: 16px;
+    color: var(--white-color);
+    text-decoration: none;
+    padding:16px;
+
+    @media(min-width: 768px){
+        border: none;
+        color: var(--black-color);
+        padding: 9px;
+        margin-right: 48px;
+
+    }
+
+}
+
+.menu a:hover{
+    background-color: rgba(255, 255, 255, .3);
+    
+    @media(min-width: 768px){
+        font-weight: 500;
+        color: var(--green-color);
+        text-decoration: line-through;
+    }
+
+}
+
+.menu a:active{
+    color: rgba(6,10,36,0.56);
+
+    @media(min-width: 768px){
+        text-decoration: line-through;
+    }
+    
+}
+#menu-check:checked ~ .menu{
+    right: 0%;
+}
+
+#menu-check:checked + label .btn-open{
+    display: none;
+}
+
+#menu-check:checked + label .btn-close{
+    display: inline;
+}
